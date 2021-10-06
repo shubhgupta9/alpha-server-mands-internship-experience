@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+@Author : Ankit Bhatia
+-->
+<html lang="en">
+  <head>
+    <title> Salesforce Connect </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="icon"  type="image/icon"  href="SOQL.ico" />
+  </head>
+  <body class="container" style="padding-top:50px;">
+      <div ng-app="app1" >
+            <div class="jumbotron" ng-controller="ItemCtrl">
+              <h1> Salesforce & Nodejs </h1> 
+              <p>
+                  With Express, Passport & Bootstrap.
+            </p>
+            <p>
+                <table class="table">
+                    <tr>
+                        <td>
+                            <h4> SF user ID : </h4>
+                        </td>
+                        <td>
+                            <h4> <%= user.id %></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4> SF Username : </h4>
+                        </td>
+                        <td>
+                            <h4> <%= user.username %></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4> SF Name : </h4>
+                        </td>
+                        <td>
+                            <h4> <%= user.displayName %></h4>
+                        </td>
+                    </tr>
+                </table>
+                
+              </p>
+              <p>
+            </div>
+        </div>
+
+    
+  </body> 
+</html>
